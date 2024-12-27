@@ -1,0 +1,18 @@
+{
+    "camera": "Camera",
+    "map": "Map",
+    "save": "Save",
+    "homePage": "Home",
+    "gallery": "Gallery",
+    "addPhoto": "Add Photo",
+    "selectPhotoAddingSource": "Select photo adding source",
+    "details": "Details",
+    "noRecordFound": "No information is recorded!",
+    "note": "Note",
+    "personCountInPhoto": "Person Count in Photo: {personCount}",
+    "delete": "Delete",
+    "personCount": "{count} People",
+    "photoNotFound": "Photo not found!",
+    "locationServicesAreDisabled": "Location services are disabled!",
+    "locationPermissionsAreDenied": "Location permissions are denied!"
+}

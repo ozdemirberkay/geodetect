@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  Runner
+
+  Created by Berkay on 10.11.2024.
+  
+*/
+NSPhotoLibraryUsageDescription="Photo permission is required to add photos from the gallery.";
+NSCameraUsageDescription="Camera permission is required to take photos.";
+NSLocationWhenInUseUsageDescription="Location permission is required to save location.";
+

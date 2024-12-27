@@ -1,0 +1,18 @@
+{
+    "camera": "Kamera",
+    "map": "Harita",
+    "save": "Kaydet",
+    "homePage": "Anasayfa",
+    "gallery": "Galeri",
+    "addPhoto": "Fotoğraf Ekle",
+    "selectPhotoAddingSource": "Fotoğraf ekleme kaynağı seç",
+    "details": "Detaylar",
+    "noRecordFound": "Kayıtlı bilgi yok!",
+    "note": "Not",
+    "personCountInPhoto": "Fotoğraftaki Kişi Sayısı: {personCount}",
+    "delete": "Sil",
+    "personCount": "{count} Kişi",
+    "photoNotFound": "Fotoğraf bulunamadı!",
+    "locationServicesAreDisabled": "Konum servisi devre dışı!",
+    "locationPermissionsAreDenied": "Konum izni reddedildi!"
+}

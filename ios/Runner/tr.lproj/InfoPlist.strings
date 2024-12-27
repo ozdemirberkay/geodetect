@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  Runner
+
+  Created by Berkay on 10.11.2024.
+  
+*/
+NSPhotoLibraryUsageDescription="Galeriden fotoğraf ekleyebilmek için fotoğraflara erişim izni gerekmektedir.";
+NSCameraUsageDescription="Fotoğraf çekebilmek için kamera izni gerekmektedir.";
+NSLocationWhenInUseUsageDescription="Konum kaydetmek için konum izni gerekmektedir.";
