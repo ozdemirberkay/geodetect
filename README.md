@@ -1,19 +1,59 @@
-![detail](https://github.com/user-attachments/assets/139f8451-01a8-448c-a49e-ce9f0b205355)# geodetect
+### Geodetect
+This Flutter application allows users to detect and count the number of people in a photo selected from the camera or gallery. It also visualizes the detected locations on a map using Google Maps.
 
-A new Flutter project.
 
-## Getting Started
+#### **Setup**
 
-This project is a starting point for a Flutter application.
+**Install Dependencies**  
+   ```
+   flutter pub get
+   ```
 
-A few resources to get you started if this is your first Flutter project:
+**Add Google Maps API Keys**
+   - **For Android:**  
+     Add this line to `android/app/src/main/AndroidManifest.xml`:  
+     ```xml
+     <meta-data
+         android:name="com.google.android.geo.API_KEY"
+         android:value="YOUR_ANDROID_GOOGLE_MAPS_API_KEY"/>
+     ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+   - **For iOS:**  
+     Add this line to `ios/Runner/AppDelegate.swift`:  
+     ```swift
+     GMSServices.provideAPIKey("YOUR_IOS_GOOGLE_MAPS_API_KEY")
+     ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**Provide a Human Detection Model Endpoint**  
+   - The application requires a backend service that processes the images and predicts the number of people in them.
+   - You can use the YOLOv8-based detection model available in this repository:  
+     [Human Detection with YOLOv8](https://github.com/ozdemirberkay/human-detection-yolov8).
+   - Alternatively, set up your own endpoint. Update the serverURL variable in the HumanDetector class, located in the human_detector.dart file:
+     ```dart
+     static final serverURL = "YOUR_SERVER_BASE_URL";
+     ```
+   - Ensure your server provides an endpoint (`/predict`) that accepts an image file and responds with a JSON object containing the key `"count"`.  
+     Example response:  
+     ```json
+     {
+       "count": 3
+     }
+     ```
+
+**Run the App**  
+   ```
+   flutter run
+   ```
+
+
+ 
+
+
+
+
+
+
+
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/d690500f-5320-4171-a8f0-4639292e97c1" width="270" height="570">
